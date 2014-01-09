@@ -1,3 +1,6 @@
+import scala.collection.JavaConverters._
+import scala.Some
+
 name := "irc-actor"
 
 organization := "org.nemesis"
@@ -30,3 +33,16 @@ publishTo <<= version { (v: String) =>
 }
 
 pomIncludeRepository := { _ => false }
+
+pomExtra :=
+  <scm>
+    <url>git@github.com:aalbul/reactive-irc.git</url>
+    <connection>scm:git:git@github.com:aalbul/reactive-irc.git</connection>
+  </scm>
+    <developers>
+      <developer>
+        <id>aalbul</id>
+        <name>Alexander Albul</name>
+        <url>https://github.com/aalbul</url>
+      </developer>
+    </developers>
