@@ -3,7 +3,7 @@ reactive-irc
 
 Library that gives you a reactive way to write IRC bots in Scala
 
-It uses latest version on PircBotX library (https://code.google.com/p/pircbotx/) and just provide convenient, actor-driven
+It uses latest version of PircBotX library (https://code.google.com/p/pircbotx/) and just provide convenient, actor-driven
 way to write your bots.
 
 Installation:
