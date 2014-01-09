@@ -18,7 +18,7 @@ trait ReactiveBot extends Actor with Logging {
    * @param config - hooks config
    * @return configured hooks function
    */
-  protected def coreHooks(config: CoreHooksConfig): Receive = {
+  protected def coreHooks(config: CoreHooksConfig = CoreHooksConfig()): Receive = {
     finger(config.finger) orElse ping orElse serverPing orElse time orElse version(config.version)
   }
 
@@ -52,5 +52,5 @@ trait ReactiveBot extends Actor with Logging {
       sender ! SendVersion(user.nick, version)
   }
 
-  case class CoreHooksConfig(finger: String, version: String)
+  case class CoreHooksConfig(finger: String = "", version: String = "1.0")
 }
