@@ -4,6 +4,10 @@ organization := "com.github.aalbul"
 
 version := "0.6.1"
 
+licenses := Seq("BSD-style" -> url("http://opensource.org/licenses/GPL-3.0"))
+
+homepage := Some(url("https://github.com/aalbul/reactive-irc"))
+
 scalaVersion := "2.10.2"
 
 resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
