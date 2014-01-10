@@ -1,6 +1,6 @@
 name := "irc-actor"
 
-organization := "org.nemesis"
+organization := "com.github.aalbul"
 
 version := "0.6.1"
 
