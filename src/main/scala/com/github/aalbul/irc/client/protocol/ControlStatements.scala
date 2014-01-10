@@ -1,4 +1,4 @@
-package org.nemesis.irc.client.protocol
+package com.github.aalbul.irc.client.protocol
 
 /**
  * Created by nuru on 08.01.14.

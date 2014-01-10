@@ -1,11 +1,11 @@
-package org.nemesis.irc.client.protocol
+package com.github.aalbul.irc.client.protocol
 
 import org.pircbotx.hooks.ListenerAdapter
 import org.pircbotx.PircBotX
 import org.pircbotx.hooks.events._
 import scala.collection.JavaConversions._
-import org.nemesis.irc.domain.Messages._
-import org.nemesis.irc.domain._
+import com.github.aalbul.irc.domain.Messages._
+import com.github.aalbul.irc.domain._
 
 /**
  * Created by nuru on 04.01.14.

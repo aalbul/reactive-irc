@@ -1,8 +1,8 @@
-package org.nemesis.irc.client.handlers
+package com.github.aalbul.irc.client.handlers
 
 import akka.actor.Actor
-import org.nemesis.irc.client.protocol.ControlStatements._
-import org.nemesis.irc.domain.Messages._
+import com.github.aalbul.irc.client.protocol.ControlStatements._
+import com.github.aalbul.irc.domain.Messages._
 import scala.collection.JavaConversions._
 
 /**

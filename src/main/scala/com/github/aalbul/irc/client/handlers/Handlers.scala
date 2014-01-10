@@ -1,4 +1,4 @@
-package org.nemesis.irc.client.handlers
+package com.github.aalbul.irc.client.handlers
 
 import org.pircbotx.{Channel, User, UserChannelDao, PircBotX}
 import akka.actor.Actor

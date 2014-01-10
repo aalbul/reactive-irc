@@ -1,11 +1,8 @@
-import scala.collection.JavaConverters._
-import scala.Some
-
 name := "irc-actor"
 
 organization := "org.nemesis"
 
-version := "0.6"
+version := "0.6.1"
 
 scalaVersion := "2.10.2"
 

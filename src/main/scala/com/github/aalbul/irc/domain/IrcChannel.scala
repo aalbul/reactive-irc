@@ -1,4 +1,4 @@
-package org.nemesis.irc.domain
+package com.github.aalbul.irc.domain
 
 import java.util.UUID
 import org.pircbotx.Channel

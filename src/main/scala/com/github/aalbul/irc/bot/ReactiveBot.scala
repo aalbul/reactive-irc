@@ -1,9 +1,9 @@
-package org.nemesis.irc.bot
+package com.github.aalbul.irc.bot
 
 import akka.actor.Actor
 import java.util.Date
-import org.nemesis.irc.client.protocol.ControlStatements._
-import org.nemesis.irc.domain.Messages._
+import com.github.aalbul.irc.client.protocol.ControlStatements._
+import com.github.aalbul.irc.domain.Messages._
 import grizzled.slf4j.Logging
 
 /**

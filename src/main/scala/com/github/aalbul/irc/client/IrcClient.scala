@@ -1,10 +1,10 @@
-package org.nemesis.irc.client
+package com.github.aalbul.irc.client
 
 import akka.actor.Actor
 import org.pircbotx.{PircBotX, Configuration}
-import org.nemesis.irc.client.protocol.{PircBotXRunnable, DelegatingListener}
+import com.github.aalbul.irc.client.protocol.{PircBotXRunnable, DelegatingListener}
 import grizzled.slf4j.Logging
-import org.nemesis.irc.client.handlers.{ProtocolHandlers, UserHandlers, ChannelHandlers}
+import com.github.aalbul.irc.client.handlers.{ProtocolHandlers, UserHandlers, ChannelHandlers}
 import scala.collection.JavaConversions._
 import org.pircbotx.hooks.CoreHooks
 
