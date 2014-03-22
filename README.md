@@ -9,8 +9,21 @@ way to write your bots.
 Installation:
 ------------
 
-Unfortunately, we didn't upload this project to central maven repository yet so you have to checkout and complete project
-by yourself.
+Just add this to your SBT file:
+
+```
+libraryDependencies += "com.github.aalbul" %% "irc-actor" % "0.7.0"
+```
+
+For Maven:
+
+``` xml
+<dependency>
+	<groupId>com.github.aalbul</groupId>
+	<artifactId>irc-actor_2.10</artifactId>
+	<version>0.7.0</version>
+</dependency>
+```
 
 Usage: Writing bot.
 ------------
