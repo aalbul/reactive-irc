@@ -1,16 +1,16 @@
 package com.github.aalbul.irc.client.handlers
 
 import akka.actor.Actor
-import com.github.aalbul.irc.client.protocol.ControlStatements._
 import com.github.aalbul.irc.domain.Messages._
 import scala.collection.JavaConversions._
-
+import com.github.aalbul.irc.client.IrcClient._
+import com.github.aalbul.irc.client.IrcClient
 /**
  * Created by nuru on 06.01.14.
  *
  * Channel-related message handlers
  */
-trait ChannelHandlers extends Handlers {
+trait ChannelHandlers { self: IrcClient =>
 
   def channelHandlers: Actor.Receive = {
     case SendChannelMessage(channel, message, recipient) => recipient match {

@@ -7,15 +7,14 @@ import org.pircbotx.PircBotX
  *
  * Thread that starts IRC client and listen for messages
  */
-class PircBotXRunnable(client: PircBotX, callback: Any => Unit) extends Runnable {
+class PircBotXRunnable(client: PircBotX) extends Runnable {
   def run(): Unit = {
     try {
       client.startBot()
     } catch {
-      case _:InterruptedException => {
+      case _:InterruptedException =>
         client.stopBotReconnect()
         Thread.currentThread().interrupt()
-      }
     }
   }
 }

@@ -5,9 +5,9 @@ package com.github.aalbul.irc.client.protocol
  *
  * Control statement case classes
  */
-object ControlStatements {
+trait ControlStatements {
   case class SendPrivateMessage(user: String, message: String)
-  case class SendChannelMessage(channel: String, message: String, recipient: Option[String])
+  case class SendChannelMessage(channel: String, message: String, recipient: Option[String] = None)
   case class ListChannels(min: Option[Int] = None, max: Option[Int] = None)
   case class SendInvite(channel: String, user: String)
   case class ChangeNick(newNick: String)

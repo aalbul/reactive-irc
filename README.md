@@ -37,10 +37,11 @@ object Runner {
     val config = ClientConfig("FloodBot", "Irc Bot", "irc.freenode.net", 6667, Seq(ChannelConf("#floodBot")))
 
     val actorSystem = ActorSystem("irc-bot")
-    actorSystem.actorOf(Props[EchoBot], "actor-bot")
-    actorSystem.actorOf(Props(classOf[IrcClient], config, "/user/actor-bot"), "irc-client")
+    val client = actorSystem.actorOf(Props[IrcClient], "irc-client")
+    val bot = actorSystem.actorOf(Props[EchoBot], "actor-bot")
+
+    client ! Initialize(config)
+    client ! RegisterListener(bot)
   }
 }
 ```
-
-`IrcClient` require `ClientConfig` to connect to server. Also, it require that bot actor path be passed as a constructor arg.

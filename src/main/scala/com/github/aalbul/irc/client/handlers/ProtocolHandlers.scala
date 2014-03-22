@@ -1,16 +1,17 @@
 package com.github.aalbul.irc.client.handlers
 
 import akka.actor.Actor
-import com.github.aalbul.irc.client.protocol.ControlStatements._
 import com.github.aalbul.irc.domain.Messages._
 import scala.collection.JavaConversions._
+import com.github.aalbul.irc.client.IrcClient
+import IrcClient._
 
 /**
  * Created by nuru on 06.01.14.
  *
  * Protocol-related message handlers
  */
-trait ProtocolHandlers extends Handlers {
+trait ProtocolHandlers { self: IrcClient =>
 
   def protocolHandlers: Actor.Receive = {
     case GetEnabledCapabilities() => sender ! EnabledCapabilities(client.getEnabledCapabilities.toList)

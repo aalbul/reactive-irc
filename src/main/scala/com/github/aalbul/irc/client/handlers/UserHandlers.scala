@@ -1,16 +1,16 @@
 package com.github.aalbul.irc.client.handlers
 
 import akka.actor.Actor
-import com.github.aalbul.irc.client.protocol.ControlStatements._
 import com.github.aalbul.irc.domain.Messages._
 import scala.collection.JavaConversions._
-
+import com.github.aalbul.irc.client.IrcClient
+import com.github.aalbul.irc.client.IrcClient._
 /**
  * Created by nuru on 06.01.14.
  *
  * User-related message handlers
  */
-trait UserHandlers extends Handlers {
+trait UserHandlers { self: IrcClient =>
 
   def userHandlers: Actor.Receive = {
     case SendPrivateMessage(user, message) => dao.getUser(user).send().message(message)

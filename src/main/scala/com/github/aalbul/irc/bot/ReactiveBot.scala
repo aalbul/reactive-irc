@@ -2,9 +2,9 @@ package com.github.aalbul.irc.bot
 
 import akka.actor.Actor
 import java.util.Date
-import com.github.aalbul.irc.client.protocol.ControlStatements._
 import com.github.aalbul.irc.domain.Messages._
 import grizzled.slf4j.Logging
+import com.github.aalbul.irc.client.IrcClient._
 
 /**
  * Created by nuru on 08.01.14.

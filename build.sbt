@@ -2,19 +2,19 @@ name := "irc-actor"
 
 organization := "com.github.aalbul"
 
-version := "0.6.1"
+version := "0.7.0"
 
 licenses := Seq("BSD-style" -> url("http://opensource.org/licenses/GPL-3.0"))
 
 homepage := Some(url("https://github.com/aalbul/reactive-irc"))
 
-scalaVersion := "2.10.2"
+scalaVersion := "2.10.3"
 
 resolvers += "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 
 libraryDependencies += "org.pircbotx" % "pircbotx" % "2.0.1"
 
-libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.2.3"
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.0"
 
 libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.0.13"
 
